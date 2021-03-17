@@ -110,6 +110,14 @@ body{
     }
 
 }
+.ruseDuChefSioux{
+    height: 50vh;
+    width: 100%;
+   background-image: url(./images/fond.png);
+    background-size: cover;
+   
+    
+}
 /****************************video*******************************/
 #video {
     position: relative;
