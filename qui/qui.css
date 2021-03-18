@@ -476,3 +476,95 @@ article{
         opacity: 0.5;
     }
 }
+/***********************menu*******************************************/
+
+#menu,#croix,#home,#portfolio,#skills,#contact{
+    position: fixed;
+    z-index: 30;
+    font-size: 30px;
+    color: #12c2e9;  /* fallback for old browsers */
+    top: 20px;
+    right: 20px;
+    animation: menuArrive linear 0.7s;
+}
+#home,#portfolio,#skills,#contact{
+    display: none;
+}
+@keyframes menuArrive{
+    0%{
+        transform: translateX(-50px);
+        filter: blur(30px);
+    }
+    100%{
+        transform: translateX(0);
+        filter: blur(0px);
+    }
+}
+#croix{
+    display: none;
+    animation: tourneCroix linear 0.3s;   
+}
+@keyframes tourneCroix{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+#home{
+    top: 80px;
+    right:15px;
+}
+.accueil,.menuPortfolio,.menuSkills,.menuContact{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 65px;
+    right:15px;
+    animation: legende linear 0.5s;
+    background: #12c2e9;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    z-index: 30;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.5px;
+}
+.menuPortfolio{
+    top: 125px;
+}
+.menuSkills{
+    top: 180px;
+}
+.menuContact{
+    top: 235px;
+}
+
+@keyframes legende{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+#portfolio{
+    top: 140px;
+    right:15px;
+}
+#skills{
+    top: 195px;
+    right:20px;
+}
+#contact{
+    top: 250px;
+    right:15px;
+}
+
+#menu:hover,#croix:hover,#home:hover,#portfolio:hover,#skills:hover,#contact:hover{
+cursor: pointer;
+}
