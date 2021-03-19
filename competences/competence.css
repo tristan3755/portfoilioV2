@@ -119,7 +119,7 @@ article{
     position: fixed;
     z-index: 30;
     font-size: 30px;
-    color: #9E2121;
+    color: #c70d0d;
     top: 20px;
     right: 20px;
     animation: menuArrive linear 0.7s;
@@ -195,7 +195,7 @@ article{
 }
 #skills{
     top: 195px;
-    right:20px;
+    right:15px;
 }
 #contact{
     top: 250px;
