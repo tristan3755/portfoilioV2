@@ -45,20 +45,23 @@ monParra2.style.backgroundPositionY=valeur*-1 + 'px'
 })
 
 let monSpan1=document.querySelector('#competence h1 span:nth-child(1)')
+let monSpan2=document.querySelector('#competence h1 span:nth-child(2)')
+if(monSpan1.style.width<window.screen.width && monSpan2.style.width<window.screen.width){
 window.addEventListener('scroll',()=>{
-    let valeur=scrollY/45
+  
+    let valeur=scrollY/3
     
-    monSpan1.style. width =valeur*1 + '%'
-    
+    monSpan1.style. width =valeur*1 + 'px'
+  
     })
-    let monSpan2=document.querySelector('#competence h1 span:nth-child(2)')
+    
 window.addEventListener('scroll',()=>{
-    let valeur=scrollY/45
+    let valeur=scrollY/3
    
-        monSpan2.style.width =valeur*1 + '%'
+        monSpan2.style.width =valeur*1 + 'px'
     
     })
-
+  }
     /*****************************fusée****************************/
 
 let fusee = document.getElementById("fusee");

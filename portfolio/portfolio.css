@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #9E2121;
+}
+
+/**********************titrePortfolio/**************************/
+#sect7 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #9E2121;
+}
+
+.titreSect7 {
+
+    margin: 10px;
+    color: white;
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+    filter: drop-shadow(3px 3px 3px black);
+    font-family: 'Bangers', cursive;
+    font-size: 5vw;
+
+}
+
+.border {
+    width: 200px;
+    height: 10px;
+    border-bottom: white 3px solid;
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+
+/**********************GridPortfolio/**************************/
+
+#portfolio {
+    min-height: 60vh;
+    width: 100%;
+    background-color: #9E2121;
+    display: grid;
+    grid-template-columns: 1.8fr 1.5fr 1.8fr;
+    grid-gap: 2px;
+   
+}
+
+#portfolio2 {
+    min-height: 60vh;
+    width: 100%;
+    background-color: #9E2121;
+    display: grid;
+    grid-template-columns: 2.5fr 3fr 2fr;
+    grid-gap: 2px;
+}
+
+#portfolio article:hover {
+    cursor: pointer;
+}
+
+#portfolio2 article:hover {
+    cursor: pointer;
+}
+
+
+@media(max-width:810px) {
+
+    #portfolio,
+    #portfolio2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+
+    #portfolio article {
+        width: 300px;
+        height: 200px;
+    }
+
+    #portfolio2 article {
+        width: 300px;
+        height: 200px;
+        margin: 0; 
+    }
+}.divHover {
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: 1;
+    animation: hoverPort 2s;
+}
+
+#portfolio article:nth-child(1):hover .divHover {
+    display: flex;
+}
+
+#portfolio article:nth-child(2):hover .divHover {
+    display: flex;
+}
+
+#portfolio article:nth-child(3):hover .divHover {
+    display: flex;
+}
+
+#portfolio2 article:nth-child(1):hover .divHover {
+    display: flex;
+}
+
+#portfolio2 article:nth-child(2):hover .divHover {
+    display: flex;
+}
+
+#portfolio2 article:nth-child(3):hover .divHover {
+    display: flex;
+}
+
+
+
+@keyframes hoverPort {
+    from {
+        height: 0%;
+        opacity: 0;
+    }
+
+    to {
+        height: 100%;
+        opacity: 0.8;
+    }
+}
+/**************************************************chargement********************************************************/
+.chargement{
+    display: flex;
+    position: relative;
+    z-index: 50;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #9E2121;
+}
+.chargement div:nth-child(1){
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+    top:50%;
+    height: 70px;
+    width: 70px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    animation: point1 infinite linear 1.5s;
+}
+.chargement div:nth-child(2){
+    position: absolute;
+   
+    left: 50%;
+    transform: translateX(-50%);
+    top:50%;
+    height: 70px;
+    width:70px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    animation: point1 infinite linear 2s;
+}
+.chargement div:nth-child(3){
+    position: absolute;
+ 
+    transform: translateX(-50%);
+    left: 60%;
+    top:50%;
+    height: 70px;
+    width: 70px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    animation: point1 infinite linear 2.5s;
+}
+
+@media(max-width:800px){
+    .chargement div:nth-child(1){
+       height: 30px;
+        width: 30px;
+    }
+    .chargement div:nth-child(2){
+        height: 30px;
+         width: 30px;
+     }
+     .chargement div:nth-child(3){
+        height: 30px;
+         width: 30px;
+     }
+}
+
+@keyframes point1{
+    0%{
+        top:50%;
+        opacity: 0.5;
+    }
+    25%{
+        top:45%;
+        opacity: 1;
+    }
+    50%{
+        top:50%;
+        opacity: 0.5;
+    }
+    75%{
+        top:55%;
+        opacity: 0.3;
+    }
+    100%{
+        top:50%;
+        opacity: 0.5;
+    }
+}
+/***********************menu*******************************************/
+
+#menu,#croix,#home,#portfolioMenu,#skills,#contact{
+    position: fixed;
+    z-index: 30;
+    font-size: 30px;
+    color: whitesmoke;
+    top: 20px;
+    right: 20px;
+    animation: menuArrive linear 0.7s;
+}
+#home,#portfolioMenu,#skills,#contact{
+    display: none;
+}
+@keyframes menuArrive{
+    0%{
+        transform: translateX(-50px);
+        filter: blur(30px);
+    }
+    100%{
+        transform: translateX(0);
+        filter: blur(0px);
+    }
+}
+#croix{
+    display: none;
+    animation: tourneCroix linear 0.3s;   
+}
+@keyframes tourneCroix{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+#home{
+    top: 80px;
+    right:15px;
+}
+.accueil,.menuPortfolio,.menuSkills,.menuContact{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 65px;
+    right:15px;
+    animation: legende linear 0.5s;
+    background:whitesmoke;
+    color:#9E2121;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    z-index: 30;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.5px;
+}
+.menuPortfolio{
+    top: 125px;
+}
+.menuSkills{
+    top: 180px;
+}
+.menuContact{
+    top: 235px;
+}
+
+@keyframes legende{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+#portfolioMenu{
+    top: 140px;
+    right:15px;
+}
+#skills{
+    top: 195px;
+    right:20px;
+}
+#contact{
+    top: 250px;
+    right:15px;
+}
+
+#menu:hover,#croix:hover,#home:hover,#portfolioMenu:hover,#skills:hover,#contact:hover{
+cursor: pointer;
+}
+/*****************************lazyLoad*************************/
+
+article{
+    opacity: 0;
+    transform: translateY(30%);
+    transition: ease 1s;  
+}
+
+.animIntersectSection{
+    opacity: 1;
+    transition: ease 1s;
+    transform: translateY(0);
+    
+}
+@media(max-width:700px){
+    article{
+       
+        transition: ease 500ms;  
+    }
+    
+    .animIntersectSection{
+        
+        transition: ease 500ms;
+      
+    }
+}

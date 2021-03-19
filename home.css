@@ -5,6 +5,7 @@ body {
     margin: 0;
     scroll-behavior: smooth;
     overflow: hidden;
+    background-color: #9E2121;
 }
 #home {
     
