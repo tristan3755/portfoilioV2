@@ -1,11 +1,13 @@
 body{
     margin: 0;
     padding: 0;
+   
 }
 *{
     box-sizing: border-box;
 }
-#contact{
+#contactFormulaire{
+    position: relative;
     width: 100%;
     min-height: 100vh;
     background-color:#9e2121;
@@ -30,7 +32,6 @@ body{
     appearance: none;
     background:#9e2121;
     border-radius: 20px;
-    cursor: pointer;
     box-shadow:inset rgb(27, 27, 27) -2px 0px 2px,
                         0 0 0 2px #771c1c;
         
@@ -53,7 +54,8 @@ body{
     width: 70%;
     border-radius: 20px;
     z-index:1;
-    transition:ease 0.5s ;
+    transition:ease 0.5s;
+    cursor: pointer;
 }
 .trou{
     position: absolute;
@@ -85,7 +87,7 @@ body{
     width: 70%;
     min-height: 70vh;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 5px;    
 }
 .div1,.div2{
     width: 50%;
@@ -96,10 +98,199 @@ body{
     border-top-left-radius:5px;
     border-bottom-left-radius:5px;
     background-image: url(./images/mail.jpg);
-    background-size: cover;
+    background-size: cover;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 25px;
 }
+
 .div2{
     border-top-right-radius:5px;
     border-bottom-right-radius:5px;   
-    background-size: cover;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;    
+    font-family: 'Bangers', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+/************************menu************************************/
+#menu,#croix,#home,#portfolio,#skills,#contact{
+    position: fixed;
+    z-index: 30;
+    font-size: 30px;
+    color: whitesmoke;  
+    top: 20px;
+    right: 20px;
+    animation: menuArrive linear 0.7s;
+}
+#home,#portfolio,#skills,#contact{
+    display: none;
+}
+@keyframes menuArrive{
+    0%{
+        transform: translateX(-50px);
+        filter: blur(30px);
+    }
+    100%{
+        transform: translateX(0);
+        filter: blur(0px);
+    }
+}
+#croix{
+    display: none;
+    animation: tourneCroix linear 0.3s;   
+}
+@keyframes tourneCroix{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+#home{
+    top: 80px;
+    right:15px;
+}
+.accueil,.menuPortfolio,.menuSkills,.menuContact{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 65px;
+    right:15px;
+    animation: legende linear 0.5s;
+    background:whitesmoke;
+    color: #9e2121;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    z-index: 30;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.5px;
+}
+.menuPortfolio{
+    top: 125px;
+}
+.menuSkills{
+    top: 180px;
+}
+.menuContact{
+    top: 235px;
+}
+
+@keyframes legende{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+#portfolio{
+    top: 140px;
+    right:15px;
+}
+#skills{
+    top: 195px;
+    right:20px;
+}
+#contact{
+    top: 250px;
+    right:15px;
+}
+
+#menu:hover,#croix:hover,#home:hover,#portfolio:hover,#skills:hover,#contact:hover{
+cursor: pointer;
+}
+  /*****************************chargement*************************/
+
+  .chargement{
+    display: flex;
+    position: relative;
+    z-index: 50;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #9E2121;
+}
+.chargement div:nth-child(1){
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+    top:50%;
+    height: 70px;
+    width: 70px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    animation: point1 infinite linear 1.5s;
+}
+.chargement div:nth-child(2){
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:50%;
+    height: 70px;
+    width:70px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    animation: point1 infinite linear 2s;
+}
+.chargement div:nth-child(3){
+    position: absolute;
+    transform: translateX(-50%);
+    left: 60%;
+    top:50%;
+    height: 70px;
+    width: 70px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    animation: point1 infinite linear 2.5s;
+}
+
+@media(max-width:800px){
+    .chargement div:nth-child(1){
+       height: 30px;
+        width: 30px;
+    }
+    .chargement div:nth-child(2){
+        height: 30px;
+         width: 30px;
+     }
+     .chargement div:nth-child(3){
+        height: 30px;
+         width: 30px;
+     }
+}
+
+@keyframes point1{
+    0%{
+        top:50%;
+        opacity: 0.5;
+    }
+    25%{
+        top:45%;
+        opacity: 1;
+    }
+    50%{
+        top:50%;
+        opacity: 0.5;
+    }
+    75%{
+        top:55%;
+        opacity: 0.3;
+    }
+    100%{
+        top:50%;
+        opacity: 0.5;
+    }
 }

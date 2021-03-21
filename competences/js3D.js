@@ -1,9 +1,9 @@
 /****************************************************************3d*********************************************************************/
-
+console.log('je suis chargé')
 import * as THREE from "./build/three.module.js";
 import { GLTFLoader } from "./jsm/loaders/GLTFLoader.js";
 
-console.log('je suis chargé')
+
 
 let camera, scene, renderer;
 
