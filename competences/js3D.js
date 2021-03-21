@@ -1,7 +1,7 @@
 /****************************************************************3d*********************************************************************/
-console.log('je suis chargé')
-import * as THREE from "./build/three.module.js";
-import { GLTFLoader } from "./jsm/loaders/GLTFLoader.js";
+
+import * as THREE from "../build/three.module.js";
+import { GLTFLoader } from "../jsm/loaders/GLTFLoader.js";
 
 
 
