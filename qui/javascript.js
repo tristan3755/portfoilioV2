@@ -69,7 +69,7 @@ let fusee = document.getElementById("fusee");
 window.addEventListener("scroll", () => {
   let valeur = window.scrollY;
 
-  fusee.style.bottom = valeur * 0.8 + "px";
+  fusee.style.bottom = valeur * 1.2 + "px";
 });
  /*****************************oI****************************/
 let mesImagesOrdi = document.querySelectorAll("article");

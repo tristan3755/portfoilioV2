@@ -3,9 +3,11 @@
 import * as THREE from "./build/three.module.js";
 import { GLTFLoader } from "./jsm/loaders/GLTFLoader.js";
 
+console.log('je suis chargé')
+
 let camera, scene, renderer;
 
-init();
+init(); 
 render();
 
 function init() {
@@ -102,6 +104,12 @@ function onWindowResize() {
   render();
 }
 
+/*function animate() {
+  requestAnimationFrame(animate);
+  renderer.render(scene, camera);
+  scene.rotation.y-= 0.02;
+}
+animate();*/
 
 function render() {
   renderer.render(scene, camera);

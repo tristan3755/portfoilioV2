@@ -177,7 +177,7 @@ body{
 #competence article:nth-child(1){
     background-image: url(./images/ordi.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     height: 70vh;
     transition: 0.5s;
     background-position-y:'';
@@ -219,7 +219,7 @@ body{
 #competence article:nth-child(3){
     background-image: url(./images/mobile.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-position-y:'';
     background-size: cover;
     height: 70vh;
