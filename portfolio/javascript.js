@@ -262,3 +262,5 @@ contact.addEventListener('mouseover',()=>{
 contact.addEventListener('mouseout',()=>{
   legendeContact.style.display='none'
 })
+
+/****************************************canvas *************************************************/
