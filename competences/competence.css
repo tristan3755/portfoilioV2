@@ -217,11 +217,17 @@ cursor: pointer;
     background-color: rgb(17, 17, 17);
 }
 
-#robot {
+#sun{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*#robot {
 
     width: 100%;
     height: 100vh; 
-}
+}*/
 
 .titreSkills{
     position: absolute;
