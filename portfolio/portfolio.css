@@ -20,18 +20,101 @@ body{
     background-color: #9E2121;
 }
 
-.titreSect7 {
 
-    margin: 10px;
-    color: white;
-    opacity: 1;
-    font-weight: bold;
-    letter-spacing: 5px;
-    text-align: center;
-    filter: drop-shadow(3px 3px 3px black);
-    font-family: 'Bangers', cursive;
-    font-size: 5vw;
 
+#svgTitre{
+max-width: 100%;
+margin-bottom: 5px;
+width: 800px;
+height: 400px;
+position: relative;
+top: -50px;
+}
+
+#pathLettre{
+position: absolute;
+stroke-dasharray: 446px;
+stroke-dashoffset: 446px;
+animation: titreAnim ease forwards 1s;
+}
+#pathLettre2{
+    stroke-dasharray: 257px;
+    stroke-dashoffset: 257px;
+    animation: titreAnim ease forwards 2s;
+}
+#pathLettre3{
+    stroke-dasharray: 268px;
+    stroke-dashoffset: 268px;
+    animation: titreAnim ease forwards 3s;
+}
+#pathLettre4{
+    stroke-dasharray: 313px;
+    stroke-dashoffset: 313px;
+    animation: titreAnim ease forwards 4.2s;
+}
+#pathLettre5{
+    stroke-dasharray: 348px;
+    stroke-dashoffset: 348px;
+    animation: titreAnim ease forwards 4.4s;
+}
+#pathLettre6{
+    stroke-dasharray: 311px;
+    stroke-dashoffset: 311px;
+    animation: titreAnim ease forwards 4.6s;
+}
+#pathLettre7{
+    stroke-dasharray: 195px;
+    stroke-dashoffset: 195px;
+    animation: titreAnim ease forwards 4.8s;
+}
+#pathLettre8{
+    stroke-dasharray: 168px;
+    stroke-dashoffset: 168px;
+    animation: titreAnim ease forwards 5s;
+}
+#pathLettre9{
+    stroke-dasharray: 268px;
+    stroke-dashoffset: 268px;
+    animation: titreAnim ease forwards 5.2s;
+}
+#pathLettre10{
+    stroke-dasharray: 311px;
+    stroke-dashoffset: 311px;
+    animation: titreAnim ease forwards 5.4s;
+}
+#pathLettre11{
+    stroke-dasharray: 208px;
+    stroke-dashoffset: 208px;
+    animation: titreAnim ease forwards 5.6s;
+}
+#pathLettre12{
+    stroke-dasharray: 168px;
+    stroke-dashoffset: 168px;
+    animation: titreAnim ease forwards 5.8s;
+}
+#pathLettre13{
+    stroke-dasharray: 288px;
+    stroke-dashoffset: 288px;
+    animation: titreAnim ease forwards 6s;
+}
+#pathLettre14{
+    stroke-dasharray: 339px;
+    stroke-dashoffset: 339px;
+    animation: titreAnim ease forwards 4s;
+}
+#pathLettre15{
+    stroke-dasharray: 268px;
+    stroke-dashoffset: 268px;
+    animation: titreAnim ease forwards 2s;
+}
+
+@keyframes titreAnim{
+
+    to{
+        stroke-dashoffset: 0px;   
+        top: 5px;
+        transform: translateY(50px);
+    }
 }
 
 .border {

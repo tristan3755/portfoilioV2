@@ -263,4 +263,10 @@ contact.addEventListener('mouseout',()=>{
   legendeContact.style.display='none'
 })
 
-/****************************************canvas *************************************************/
+/****************************************SVG *************************************************/
+
+let path=document.querySelectorAll('svg path')
+  for(let i=0;i<path.length;i++){
+    console.log(`lettre ${i} is ${path[i].getTotalLength()}`)
+  }
+
