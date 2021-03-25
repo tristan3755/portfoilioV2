@@ -761,3 +761,69 @@ cursor: pointer;
         text-align: center;
     }
 }
+
+/**********************************************svgFusée***************************************************/
+
+#fusee{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#fusee svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.reacteur{
+    opacity: 0;
+    animation: reacteur linear infinite 1s;
+ 
+}
+@keyframes reacteur{
+    0%{
+opacity: 0.5;
+    }50%{
+opacity: 1;
+    }
+    100%{
+       opacity: 0.5;
+    }
+}
+.hubloSoleil{
+    animation: soleil linear infinite 2s;
+}
+@keyframes soleil{
+    0%{
+opacity: 0.5;
+    }50%{
+opacity: 1;
+    }
+    100%{
+       opacity: 0.5;
+    }
+}
+
+.hublo{
+    animation: none;
+}
+
+polygon{
+    animation: etoile linear infinite 2s;
+}
+@keyframes etoile{
+    0%{
+opacity: 0;
+transform: translateY(-50px);
+    }50%{
+opacity: 1;
+    }
+    100%{
+       opacity: 0;
+    }
+}
+circle{
+    animation: etoile linear infinite 3s;
+}
+
