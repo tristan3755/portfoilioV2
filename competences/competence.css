@@ -628,71 +628,7 @@ cursor: pointer;
     }
 }
 
-/****************************ce que je recherche ************/
-#job{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 110vh;
-    width: 100%;
-   
-}
-#recherches{
-    position: relative;
-    min-height: 90vh;
-    width:1000px;
-    background-image: url(./images/bureau.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    max-width: 100%;
-    filter: grayscale(50%); 
-}
-#head{
-    position: absolute;
-    background-color: white;
-    background-image: url(./images/head.jpg);
-    background-size:contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    mix-blend-mode: screen;
-}
-#recherches p:nth-child(1){
-    position: absolute;
-    z-index: 1;
-    line-height: 5vw;
-    font-size: 3.5vw;
-    letter-spacing: 5px;
-    font-family: 'Bangers', cursive;
-    color:#ff3131;
-}
-#recherches p:nth-child(2){
-    position: absolute;
-    z-index: 1;
-    line-height: 5vw;
-    font-size: 3.5vw;
-    letter-spacing: 5px;
-    font-family: 'Bangers', cursive;
-    color:#141414;
-    bottom: 0;
-    right: 0;
-}
-@media (max-width:700px) {
 
-    #recherches p:nth-child(1){
-      font-size: 30px;
-      line-height:25px;
-    }
-    #recherches p:nth-child(2){
-        font-size: 30px;
-        line-height: 25px;
-    }
-
-}
-/*****************************apprentissage***********************/
 #apprentissage{
     position:relative;
     display: flex;
@@ -765,65 +701,53 @@ cursor: pointer;
 /**********************************************svgFusée***************************************************/
 
 #fusee{
-    position: relative;
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    min-height: 100vh; 
+
+}
+
+.interrogation{
+  animation: point linear infinite 2s;
+}
+@keyframes point{
+    0%{
+        transform: translateY(-50px);
+    }50%{
+        transform: translateY(10px)
+    }100%{
+        transform: translateY(-50px)
+    }
+}
+
+#fusee article:nth-child(1){
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   width: 20%;
     height: 100vh;
-    background-color: black;
-}
-#fusee svg{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.reacteur{
-    opacity: 0;
-    animation: reacteur linear infinite 1s;
- 
-}
-@keyframes reacteur{
-    0%{
-opacity: 0.5;
-    }50%{
-opacity: 1;
-    }
-    100%{
-       opacity: 0.5;
-    }
-}
-.hubloSoleil{
-    animation: soleil linear infinite 2s;
-}
-@keyframes soleil{
-    0%{
-opacity: 0.5;
-    }50%{
-opacity: 1;
-    }
-    100%{
-       opacity: 0.5;
-    }
 }
 
-.hublo{
-    animation: none;
+#fusee article:nth-child(1) h1{
+    font-size: 3.5vw;
+    letter-spacing: 5px;
+    font-family: 'Bangers', cursive;
+    color: #9E2121;
+    margin-left: 20px;
+}
+#fusee article:nth-child(1) p{
+    font-size: 1.5vw;
+    letter-spacing: 5px;
+    font-family: 'Bangers', cursive;
+    margin-left: 20px;
 }
 
-polygon{
-    animation: etoile linear infinite 2s;
+#fusee article:nth-child(2){
+    background-image: url(./images/fondRecherche.jpg);
+    background-size: cover;  
+    background-position: top;
+    width: 80%;
+    height: 100vh;
 }
-@keyframes etoile{
-    0%{
-opacity: 0;
-transform: translateY(-50px);
-    }50%{
-opacity: 1;
-    }
-    100%{
-       opacity: 0;
-    }
-}
-circle{
-    animation: etoile linear infinite 3s;
-}
-

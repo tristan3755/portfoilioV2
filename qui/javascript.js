@@ -33,17 +33,23 @@ document.documentElement.addEventListener("mousemove", (e) => {
 window.addEventListener('scroll',()=>{
 let valeur=scrollY/10
 
-monParra.style.backgroundPositionY=valeur*-1 + 'px'
-
+monParra.style.backgroundPositionY=valeur*-0.5 + 'px'
+if(window.matchMedia("(min-width:800px)").matches){
+monParra.style.backgroundPositionX=valeur*+0.5 + 'px'
+}
 })
 let monParra2=document.querySelector('#competence article:nth-child(3)')
 window.addEventListener('scroll',()=>{
 let valeur=scrollY/15
 
-monParra2.style.backgroundPositionY=valeur*-1 + 'px'
+monParra2.style.backgroundPositionY=valeur*-0.5 + 'px'
+if(window.matchMedia("(min-width:800px)").matches){
+  monParra2.style.backgroundPositionX=valeur*-0.5 + 'px'
+  }
 
 })
-/*
+
+
 let monSpan1=document.querySelector('#competence h1 span:nth-child(1)')
 let monSpan2=document.querySelector('#competence h1 span:nth-child(2)')
 if(monSpan1.style.width<window.screen.width && monSpan2.style.width<window.screen.width){
@@ -61,7 +67,7 @@ window.addEventListener('scroll',()=>{
         monSpan2.style.width =valeur*1 + 'px'
     
     })
-  }*/
+  }
     /*****************************fusée****************************/
 
 let fusee = document.getElementById("fusee");

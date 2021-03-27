@@ -181,6 +181,7 @@ body{
     height: 70vh;
     transition: 0.5s;
     background-position-y:'';
+    background-position-x:'';
     background-size: cover;
     top: 10px;
     left: 10px;
@@ -221,6 +222,7 @@ body{
     background-repeat: no-repeat;
     background-position: bottom;
     background-position-y:'';
+    background-position-x:'';
     background-size: cover;
     height: 70vh;
     transition: 0.5s;
