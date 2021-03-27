@@ -237,7 +237,7 @@ body{
     flex-wrap: wrap;
     min-height: 140vh;
     width: 100%;
-    background-color: rgb(12, 12, 12);
+    background-color: #0c0c0c;
     
 }
 
@@ -343,16 +343,32 @@ body{
             min-height: 220px;
         }
         }
-      
-
-
-
+        @media(max-width:400px){
+            .tourne{
+                width: 220px;
+                min-height: 220px;
+            }
+            .tournePas{
+                width: 200px;
+                min-height: 200px;
+            }
+            }
+            @media(max-width:300px){
+                .tourne{
+                    width: 200px;
+                    min-height: 200px;
+                }
+                .tournePas{
+                    width: 180px;
+                    min-height: 180px;
+                }
+                }
 .apiIdee {
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
     min-height: 110vh;
     width: 50%;
 }
@@ -362,6 +378,7 @@ body{
     width: 350px;
     max-width: 80%;
 }
+
 
 
 @media(max-width:820px) {
@@ -388,9 +405,9 @@ body{
 #fusee {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     height: 500px;
-    width: 100px;
+    width: 125px;
     z-index: 20;
     background-image: url(./images/fusee2.png);
     background-size: cover;
