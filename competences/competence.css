@@ -701,53 +701,6 @@ cursor: pointer;
 /**********************************************svgFusée***************************************************/
 
 #fusee{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    min-height: 100vh; 
 
 }
-
-.interrogation{
-  animation: point linear infinite 2s;
-}
-@keyframes point{
-    0%{
-        transform: translateY(-50px);
-    }50%{
-        transform: translateY(10px)
-    }100%{
-        transform: translateY(-50px)
-    }
-}
-
-#fusee article:nth-child(1){
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: flex-start;
-   width: 20%;
-    height: 100vh;
-}
-
-#fusee article:nth-child(1) h1{
-    font-size: 3.5vw;
-    letter-spacing: 5px;
-    font-family: 'Bangers', cursive;
-    color: #9E2121;
-    margin-left: 20px;
-}
-#fusee article:nth-child(1) p{
-    font-size: 1.5vw;
-    letter-spacing: 5px;
-    font-family: 'Bangers', cursive;
-    margin-left: 20px;
-}
-
-#fusee article:nth-child(2){
-    background-image: url(./images/fondRecherche.jpg);
-    background-size: cover;  
-    background-position: top;
-    width: 80%;
-    height: 100vh;
-}
+#fusee{}
