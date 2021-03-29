@@ -701,6 +701,167 @@ cursor: pointer;
 /**********************************************svgFusée***************************************************/
 
 #fusee{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+min-height: 100vh;
+}
+#fusee article:nth-child(1){
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+min-height: 10vh;
 
 }
-#fusee{}
+#fusee article:nth-child(1) h1{
+    color: #9E2121;
+    font-size: 3.5vw;
+    letter-spacing: 5px;
+    font-family: 'Bangers', cursive; 
+    text-align: center;
+}
+#fusee article:nth-child(1) p{
+    font-size: 2vw;
+    letter-spacing: 5px;
+    font-family: 'Bangers', cursive; 
+    text-align: center;
+    width: 70%;
+}
+#fusee article:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 70vh;
+}
+#fusee article:nth-child(2) div{
+    width: 50%;
+    min-width: 300px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:600px){
+    #fusee article:nth-child(2) div{
+        width: 100%;
+    }
+    #fusee article:nth-child(1) h1{
+       
+        font-size:35px;
+       
+    }
+    #fusee article:nth-child(1) p{
+    font-size: 15px;
+    }
+}
+@media(max-width:800px){
+   
+    #fusee article:nth-child(1) h1{
+       
+        font-size:35px;  
+    }
+    #fusee article:nth-child(1) p{
+    font-size: 15px;
+
+    }
+}
+
+/*********************************svg****************************/
+.voix{
+animation: voix  infinite 2.5s;
+}
+
+@keyframes voix{
+    0%{
+        opacity: 0;
+transform: translateX(
+0px);
+    }50%{
+        transform: translateX(50px);
+        opacity: 1;
+    }100%{
+        transform: translateX(0px);
+        opacity: 0;
+    }
+}
+/********************************************bouton contact************************/
+.contactMe{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 2vw;
+    letter-spacing: 5px;
+    font-family: 'Bangers', cursive; 
+    text-align: center;
+    position: relative;
+    padding: 15px;
+    transition: ease-in-out 0.5s;
+}
+.contactMe span{
+    position: absolute;
+    background-color: black;
+}
+.contactMe span:nth-child(1){
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 3px;
+    transform: scaleY(0);
+    transform-origin: bottom;   
+}
+.contactMe:hover span:nth-child(1){
+transform: scaleY(1);
+transition: 1s;
+}
+.contactMe span:nth-child(2){
+    top: 0;
+    left:0;
+    height: 3px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;   
+}
+.contactMe:hover span:nth-child(2){
+transform: scaleX(1);
+transition: 1s;
+}
+.contactMe span:nth-child(3){
+    top: 0;
+    right:0;
+    height: 100%;
+    width: 3px;
+    transform: scaleY(0);
+    transform-origin: top;   
+}
+.contactMe:hover span:nth-child(3){
+transform: scaleY(1);
+transition: 1s;
+}
+.contactMe span:nth-child(4){
+    bottom: 0;
+    right:0;
+    height: 3px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;   
+}
+.contactMe:hover span:nth-child(4){
+transform: scaleX(1);
+transition: 1s;
+}
+.contactMe:hover{
+    background-color:white;
+    color: black;
+}
+
+@media(max-width:600px){
+    .contactMe{
+        font-size:30px;  
+    }
+}
