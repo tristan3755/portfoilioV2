@@ -627,8 +627,6 @@ cursor: pointer;
         line-height: 15px;
     }
 }
-
-
 #apprentissage{
     position:relative;
     display: flex;
@@ -707,6 +705,8 @@ align-items: center;
 justify-content: space-between;
 width: 100%;
 min-height: 100vh;
+background-image: url(./images/fondCompetences.jpg);
+background-size: cover;
 }
 #fusee article:nth-child(1){
 display: flex;
@@ -714,40 +714,45 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 width: 100%;
-min-height: 10vh;
-
 }
 #fusee article:nth-child(1) h1{
     color: #9E2121;
-    font-size: 3.5vw;
+    font-size: 3vw;
     letter-spacing: 5px;
     font-family: 'Bangers', cursive; 
     text-align: center;
 }
 #fusee article:nth-child(1) p{
-    font-size: 2vw;
+    font-size: 1.5vw;
     letter-spacing: 5px;
     font-family: 'Bangers', cursive; 
     text-align: center;
-    width: 70%;
+    width: 60%;
 }
 #fusee article:nth-child(2){
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 70vh;
+    min-height: 60vh;
 }
 #fusee article:nth-child(2) div{
     width: 50%;
     min-width: 300px;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+@media(max-width:400px){
+    #fusee article:nth-child(2) div:nth-child(2){
+     background-color: #14100C;
+    }
+}
+
 @media(max-width:600px){
+
     #fusee article:nth-child(2) div{
         width: 100%;
     }
@@ -793,7 +798,7 @@ transform: translateX(
 /********************************************bouton contact************************/
 .contactMe{
     text-decoration: none;
-    background-color: black;
+    background-color: #14100C;
     color: white;
     font-size: 2vw;
     letter-spacing: 5px;
@@ -803,9 +808,13 @@ transform: translateX(
     padding: 15px;
     transition: ease-in-out 0.5s;
 }
+
 .contactMe span{
     position: absolute;
-    background-color: black;
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 .contactMe span:nth-child(1){
     top: 0;
@@ -813,12 +822,25 @@ transform: translateX(
     height: 100%;
     width: 3px;
     transform: scaleY(0);
-    transform-origin: bottom;   
+    transform-origin: bottom;  
+    animation: hoverY  infinite 5s; 
 }
-.contactMe:hover span:nth-child(1){
-transform: scaleY(1);
-transition: 1s;
+
+@keyframes hoverY{
+    0%{
+        transform: scaleY(0);
+
+    }50%{
+        transform: scaleY(1);
+
+    } 100%{
+        transform: scaleY(0);
+
+    }
 }
+
+
+
 .contactMe span:nth-child(2){
     top: 0;
     left:0;
@@ -826,18 +848,30 @@ transition: 1s;
     width: 100%;
     transform: scaleX(0);
     transform-origin: left;   
+    animation: hoverX  infinite 5s; 
 }
-.contactMe:hover span:nth-child(2){
-transform: scaleX(1);
-transition: 1s;
+
+@keyframes hoverX{
+    0%{
+        transform: scaleX(0);
+
+    }50%{
+        transform: scaleX(1);
+
+    }100%{
+        transform: scaleX(0);
+
+    }
 }
+
 .contactMe span:nth-child(3){
     top: 0;
     right:0;
     height: 100%;
     width: 3px;
     transform: scaleY(0);
-    transform-origin: top;   
+    transform-origin: top;  
+    animation: hoverY  infinite 5s;  
 }
 .contactMe:hover span:nth-child(3){
 transform: scaleY(1);
@@ -849,15 +883,13 @@ transition: 1s;
     height: 3px;
     width: 100%;
     transform: scaleX(0);
-    transform-origin: right;   
+    transform-origin: right; 
+    animation: hoverX  infinite 5s;   
 }
-.contactMe:hover span:nth-child(4){
-transform: scaleX(1);
-transition: 1s;
-}
+
 .contactMe:hover{
-    background-color:white;
-    color: black;
+   
+    color: #ED213A; 
 }
 
 @media(max-width:600px){
