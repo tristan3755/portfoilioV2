@@ -112,6 +112,7 @@ animation: titreAnim ease forwards 1s;
         stroke-dashoffset: 0px;   
         top: 5px;
         transform: translateY(50px);
+        
     }
 }
 

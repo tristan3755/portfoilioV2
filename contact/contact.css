@@ -179,15 +179,38 @@ cursor: pointer;
 }
 /****************************particules*************************/
 #contactFormulaire{
+    position: relative;
     display: flex;
-    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
     width: 100%;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 80vh;
+    min-width: 300px;
+}
+form{
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    min-width: 300px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 #particules{
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    min-height: 100vh;
 }
 /****************************footer*************************/
 footer{
@@ -197,4 +220,82 @@ footer{
     bottom: 0;
     z-index: 1;
     background-color: transparent;
+}
+
+/****************************form***************************/
+
+form input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 2px solid #26bf47;
+    border-radius: 1px;
+    width: 200px;
+    height: 30px;
+    box-shadow:  0 10px 10px -10px #26bf47,
+                 0 15px 35px -15px #26bf47,
+                 0 20px 40px -20px#26bf47;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+input:focus {
+    outline:  none;
+}
+textarea:focus {
+    outline:  none;
+}
+form textarea{
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 2px solid #26bf47;
+    border-radius: 1px;
+    width: 300px;
+    height: 200px;
+    box-shadow:  0 10px 10px -10px #26bf47,
+                 0 15px 35px -15px #26bf47,
+                 0 20px 40px -20px#26bf47;
+    padding: 10px;
+    resize: none;
+    font-family: 'Raleway', sans-serif;
+}
+.envoie:hover{
+color:#26bf47;
+cursor: pointer;
+height: 50px;
+transition: ease-in-out 0.5s;
+}
+.envoie{
+    transition: ease-in-out 0.5s;
+    height: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+.phone{
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.phone p{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+}
+#phoneIcone{
+    color: white;
+    text-decoration: none;  
+    font-size: 25px;
+}
+@media(max-width:600px){
+.phone{
+width: 100%;
+}
+form{
+    width: 100%;
+}
 }
