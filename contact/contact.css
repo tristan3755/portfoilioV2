@@ -228,13 +228,13 @@ form input{
     background-color: transparent;
     border: none;
     color: white;
-    border-bottom: 2px solid #26bf47;
+    border-bottom: 2px solid #eb0606;
     border-radius: 1px;
     width: 200px;
     height: 30px;
-    box-shadow:  0 10px 10px -10px #26bf47,
-                 0 15px 35px -15px #26bf47,
-                 0 20px 40px -20px#26bf47;
+    box-shadow:  0 10px 10px -10px #eb0606,
+                 0 15px 35px -15px #eb0606,
+                 0 20px 40px -20px#eb0606;
     padding: 10px;
     font-family: 'Raleway', sans-serif;
 }
@@ -248,13 +248,13 @@ form textarea{
     background-color: transparent;
     border: none;
     color: white;
-    border-bottom: 2px solid #26bf47;
+    border-bottom: 2px solid #eb0606;
     border-radius: 1px;
     width: 300px;
     height: 200px;
-    box-shadow:  0 10px 10px -10px #26bf47,
-                 0 15px 35px -15px #26bf47,
-                 0 20px 40px -20px#26bf47;
+    box-shadow:  0 10px 10px -10px #eb0606,
+                 0 15px 35px -15px #eb0606,
+                 0 20px 40px -20px#eb0606;
     padding: 10px;
     resize: none;
     font-family: 'Raleway', sans-serif;
