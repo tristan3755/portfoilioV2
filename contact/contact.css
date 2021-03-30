@@ -252,15 +252,15 @@ form textarea{
     border-radius: 1px;
     width: 300px;
     height: 200px;
-    box-shadow:  0 10px 10px -10px #eb0606,
-                 0 15px 35px -15px #eb0606,
-                 0 20px 40px -20px#eb0606;
+    box-shadow:  0 5px 5px -5px #eb0606,
+                 0 10px 10px -10px #eb0606,
+                 0 15px 15px -15px #eb0606;
     padding: 10px;
     resize: none;
     font-family: 'Raleway', sans-serif;
 }
 .envoie:hover{
-color:#26bf47;
+color:#eb0606;
 cursor: pointer;
 height: 50px;
 transition: ease-in-out 0.5s;
