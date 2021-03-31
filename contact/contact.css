@@ -186,7 +186,48 @@ cursor: pointer;
     min-height: 100vh;
     width: 100%;
 }
-
+#contactFormulaire article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    min-height: 80vh;
+    width: 100%;
+    z-index: 1;
+    
+}
+#contactFormulaire article div{
+    height: 60vh;
+    width: 300px;
+    background-color: rgba(158, 149, 149, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+#contactFormulaire article div a{
+ text-decoration: none;   
+ color: white;
+}
+#contactFormulaire article div a i{
+   font-size: 30px;
+   filter: blur(0.5px);
+   }
+#contactFormulaire article div h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
+    width: 80%;
+    font-size: 15px;
+    filter: blur(0.5px);
+}
 #particules{
     position: absolute;
     width: 100%;
