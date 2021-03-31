@@ -629,6 +629,7 @@ cursor: pointer;
     min-height: 100vh;
     width: 100%;
 }
+
 #apprentissage article{
     width: 50%;
     min-width: 300px;
@@ -679,13 +680,37 @@ justify-content: center;
 #apprentissage article:nth-child(2) div{
    height: 250px;
    width: 60%;
-   
-    }
+}
+#apprentissage article:nth-child(2) div:nth-child(1){
+    height: 100px;
+    width: 40%;
+    margin-bottom: -60px;
+ }
+ #apprentissage article:nth-child(2) div:nth-child(3){
+    height: 10px;
+    width: 50%;
+    align-self: flex-end;
+ }
     .svg{
-        
         position: absolute;
         width: 100%;
         height: 100%;
+        
+    }
+    @media(max-width:400px){
+        #apprentissage {
+            min-height: 50vh;
+        }
+        #apprentissage article{
+            
+            min-height: 50vh;
+           
+        }
+        #apprentissage article:nth-child(1) div{
+         
+            min-height: 25vh;
+            
+        }
     }
     /************************************svgTitre**********************************/
 
@@ -753,7 +778,6 @@ width: 100%;
 #fusee article:nth-child(1) h1{
     color: #9E2121;
     font-size: 3vw;
-    letter-spacing: 5px;
     font-family: 'Bangers', cursive; 
     text-align: center;
 }
