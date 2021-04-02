@@ -267,3 +267,26 @@ if (window.matchMedia("(max-width:700px)").matches) {
 
   mesImagesOrdi.forEach(translateImg);
 }
+/*********************formContact *******************************/
+
+let maCroixContact=document.getElementById('croixContact')
+let contactForm=document.getElementById('contactForm')
+
+maCroixContact.addEventListener('click',()=>{
+contactForm.style.opacity="0"
+contactForm.style.zIndex="0"
+contactForm.style.width="0%"
+})
+let boutonContact=document.querySelector('.contactMe')
+boutonContact.addEventListener('click',()=>{
+  contactForm.style.opacity="1"
+  contactForm.style.zIndex="50"
+  contactForm.style.width="100%"
+  })
+
+  let boutonContactMenu=document.getElementById('contact')
+  boutonContactMenu.addEventListener('click',()=>{
+  contactForm.style.opacity="1"
+  contactForm.style.zIndex="50"
+  contactForm.style.width="100%"
+  })
