@@ -996,11 +996,12 @@ footer div p{
     top: 0;
     right: 0;
     width: 0%;
-    height: 100vh;
+    min-height: 100vh;
     transition: ease-in-out 1s;
     opacity: 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -1011,6 +1012,7 @@ footer div p{
     right: 20px;
     color: white;
     transition: ease-in-out 0.5s;
+    z-index: 500;
 }
 #croixContact:hover{
     cursor: pointer;
@@ -1020,11 +1022,13 @@ footer div p{
 #contactForm article{
 height: 60vh;
 width: 40%;
+min-width: 300px;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-evenly;
 position: relative;
+opacity: 0;
 }
 #contactForm article div{
     height: 40vh;
@@ -1036,6 +1040,14 @@ position: relative;
    text-align: center;
    font-family: 'Bangers', 'cursive'; 
    letter-spacing: 2px;
+}
+@media(max-width:600px){
+    #contactForm article{
+        height: 40vh;
+        }#contactForm article div{
+            height: 30vh;
+          
+        }
 }
 /*******************************animationContact**************************/
 #point{
