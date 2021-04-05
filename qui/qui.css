@@ -615,3 +615,127 @@ article{
 #menu:hover,#croix:hover,#home:hover,#portfolio:hover,#skills:hover,#contact:hover{
 cursor: pointer;
 }
+/***********************contact*******************************/
+
+#contactForm{
+    background-color: #FFB200;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0%;
+    min-height: 100vh;
+    transition: ease-in-out 1s;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#croixContact{
+    position: absolute;
+    font-size: 40px;
+    top: 20px;
+    right: 20px;
+    color: white;
+    transition: ease-in-out 0.5s;
+    z-index: 500;
+}
+#croixContact:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: ease-in-out 0.5s;
+}
+#contactForm article{
+height: 60vh;
+width: 40%;
+min-width: 300px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+position: relative;
+opacity: 0;
+}
+#contactForm article div{
+    height: 40vh;
+    width: 100%;
+}
+#contactForm article p{
+   width: 80%;
+   color: white;
+   text-align: center;
+   font-family: 'Bangers', 'cursive'; 
+   letter-spacing: 2px;
+}
+@media(max-width:600px){
+    #contactForm article{
+        height: 40vh;
+        }#contactForm article div{
+            height: 30vh;
+          
+        }
+}
+/*******************************animationContact**************************/
+#point{
+    animation: point infinite 1s;
+}
+@keyframes point{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#point2{
+    animation: point2 infinite 2s;
+}
+@keyframes point2{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#point3{
+    animation: point3 infinite 3s;
+}
+@keyframes point3{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#lettre1{
+    animation: lettre linear infinite 2s;
+}
+@keyframes lettre{
+    0%{
+       
+        transform: translateY(0px);
+    }
+    50%{
+       
+        transform: translateY(-50px);
+    }
+    100%{
+        
+        transform: translateY(0px);
+    }
+}
