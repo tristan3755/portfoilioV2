@@ -217,7 +217,20 @@ function monHoverSql() {
 
 if (matchMedia("(max-width:700px)").matches) {
   mySql.addEventListener("click", () => {
-    monHoverSql();
+    monHoverSvg();
+  });
+}
+let monSvg = document.querySelector(".hoverSvg");
+
+function monHoverSvg() {
+ monSvg.style.top = "0";
+ monSvg .style.width = "25%";
+ monSvg .style.height = "25%";
+}
+
+if (matchMedia("(max-width:700px)").matches) {
+  monSvg .addEventListener("click", () => {
+    monHoverSvg();
   });
 }
 

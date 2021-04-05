@@ -337,34 +337,17 @@ body{
     }
     @media(max-width:500px){
         .tourne{
-            width: 240px;
-            min-height: 240px;
+            width: 300px;
+            min-height: 300px;
+            animation: none;
         }
         .tournePas{
-            width: 220px;
-            min-height: 220px;
+            width: 280px;
+            min-height: 280px;
+            animation: none;
         }
         }
-        @media(max-width:400px){
-            .tourne{
-                width: 220px;
-                min-height: 220px;
-            }
-            .tournePas{
-                width: 200px;
-                min-height: 200px;
-            }
-            }
-            @media(max-width:300px){
-                .tourne{
-                    width: 200px;
-                    min-height: 200px;
-                }
-                .tournePas{
-                    width: 180px;
-                    min-height: 180px;
-                }
-                }
+     
 .apiIdee {
 
     display: flex;
