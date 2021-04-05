@@ -220,19 +220,30 @@ if (matchMedia("(max-width:700px)").matches) {
     monHoverSvg();
   });
 }
-let monSvg = document.querySelector(".hoverSvg");
+let monFigma = document.querySelector(".hoverFigma");
 
-function monHoverSvg() {
- monSvg.style.top = "0";
- monSvg .style.width = "25%";
- monSvg .style.height = "25%";
+function monHoverFigma() {
+  monFigma.style.top = "0";
+  monFigma.style.width = "25%";
+  monFigma .style.height = "25%";
 }
 
 if (matchMedia("(max-width:700px)").matches) {
-  monSvg .addEventListener("click", () => {
-    monHoverSvg();
+  monFigma .addEventListener("click", () => {
+    monHoverFigma();
   });
 }
+function monHoverFigma() {
+  monFigma.style.top = "0";
+  monFigma .style.width = "25%";
+  monFigma.style.height = "25%";
+ }
+ 
+ if (matchMedia("(max-width:700px)").matches) {
+  monFigma .addEventListener("click", () => {
+     monHoverFigma();
+   });
+ }
 
 /*****************************oI****************************/
 let mesImagesOrdi = document.querySelectorAll("article");
