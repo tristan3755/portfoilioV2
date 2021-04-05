@@ -68,6 +68,7 @@ window.addEventListener('scroll',()=>{
     
     })
   }
+  
     /*****************************fusée****************************/
 
 let fusee = document.getElementById("fusee");
