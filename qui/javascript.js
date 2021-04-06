@@ -52,7 +52,7 @@ if(window.matchMedia("(min-width:800px)").matches){
 
 let monSpan1=document.querySelector('#competence h1 span:nth-child(1)')
 let monSpan2=document.querySelector('#competence h1 span:nth-child(2)')
-if(monSpan1.style.width<window.screen.width && monSpan2.style.width<window.screen.width){
+if(monSpan1.style.width<window.innerWidth && monSpan2.style.width<window.innerWidth){
 window.addEventListener('scroll',()=>{
   
     let valeur=scrollY/3
@@ -68,6 +68,7 @@ window.addEventListener('scroll',()=>{
     
     })
   }
+  
   
     /*****************************fusée****************************/
 
