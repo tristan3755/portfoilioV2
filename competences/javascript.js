@@ -217,7 +217,7 @@ function monHoverSql() {
 
 if (matchMedia("(max-width:700px)").matches) {
   mySql.addEventListener("click", () => {
-    monHoverSvg();
+    monHoverSql();
   });
 }
 let monFigma = document.querySelector(".hoverFigma");
@@ -233,15 +233,16 @@ if (matchMedia("(max-width:700px)").matches) {
     monHoverFigma();
   });
 }
-function monHoverFigma() {
-  monFigma.style.top = "0";
-  monFigma .style.width = "25%";
-  monFigma.style.height = "25%";
+let monSvg = document.querySelector(".hoverSvg");
+function monHoverSvg() {
+  monSvg.style.top = "0";
+  monSvg .style.width = "25%";
+  monSvg.style.height = "25%";
  }
  
  if (matchMedia("(max-width:700px)").matches) {
-  monFigma .addEventListener("click", () => {
-     monHoverFigma();
+  monSvg .addEventListener("click", () => {
+     monHoverSvg();
    });
  }
 

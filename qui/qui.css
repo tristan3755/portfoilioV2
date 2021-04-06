@@ -133,8 +133,8 @@ body{
 
 #encre {
     position: absolute;
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     margin-top: 0;
     filter: grayscale(20%);
@@ -179,7 +179,6 @@ body{
     background-repeat: no-repeat;
     background-position: bottom;
     height: 70vh;
-    transition: 0.5s;
     background-position-y:'';
     background-position-x:'';
     background-size: cover;
@@ -225,7 +224,6 @@ body{
     background-position-x:'';
     background-size: cover;
     height: 70vh;
-    transition: 0.5s;
     bottom: 0;
     right: 10px;
 }
@@ -337,13 +335,9 @@ body{
     }
     @media(max-width:500px){
         .tourne{
-            width: 300px;
-            min-height: 300px;
             animation: none;
         }
         .tournePas{
-            width: 280px;
-            min-height: 280px;
             animation: none;
         }
         }
