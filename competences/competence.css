@@ -1021,18 +1021,21 @@ footer{
     min-height: 80px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     z-index: 1;
+    background-color: #14100C;
 }
 footer div{
     width: 50%;
+    min-width: 280px;
     height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #14100C;
+   
 
 }
 footer div p{

@@ -20,6 +20,8 @@ contactForm.style.zIndex="0"
 contactForm.style.width="0%"
 articles.style.opacity='0'
 articles1.style.opacity='0'
+articles.style.width='0%'
+articles1.style.width='0%'
 })
 let boutonContact=document.querySelector('.contactMenu')
 boutonContact.addEventListener('click',()=>{
@@ -28,6 +30,8 @@ boutonContact.addEventListener('click',()=>{
   contactForm.style.width="100%"
   articles.style.opacity='1'
   articles1.style.opacity='1'
+  articles.style.width='40%'
+articles1.style.width='40%'
 
   })
 

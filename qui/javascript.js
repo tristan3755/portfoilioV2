@@ -52,6 +52,7 @@ if(window.matchMedia("(min-width:800px)").matches){
 
 let monSpan1=document.querySelector('#competence h1 span:nth-child(1)')
 let monSpan2=document.querySelector('#competence h1 span:nth-child(2)')
+if(window.matchMedia("(min-width:600px)").matches){
 if(monSpan1.style.width<window.innerWidth && monSpan2.style.width<window.innerWidth){
 window.addEventListener('scroll',()=>{
   
@@ -68,7 +69,10 @@ window.addEventListener('scroll',()=>{
     
     })
   }
-  
+}else{
+  monSpan2.style.width ="70%"
+  monSpan1.style. width ="70%"
+}
   
     /*****************************fusée****************************/
 
