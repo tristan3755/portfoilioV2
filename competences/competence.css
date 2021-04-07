@@ -673,7 +673,7 @@ cursor: pointer;
         min-height: 60vh;
         border-radius: 5px;
         width: 500px;
-        max-width: 100%;
+        max-width: 98%;
     }
     .html5 p,
     .css p,
@@ -959,9 +959,6 @@ transform: translateX(
 
     }
 }
-
-
-
 .contactMe span:nth-child(2){
     top: 0;
     left:0;
@@ -971,7 +968,6 @@ transform: translateX(
     transform-origin: left;   
     animation: hoverX  infinite 5s; 
 }
-
 @keyframes hoverX{
     0%{
         transform: scaleX(0);
@@ -984,7 +980,6 @@ transform: translateX(
 
     }
 }
-
 .contactMe span:nth-child(3){
     top: 0;
     right:0;
@@ -994,7 +989,6 @@ transform: translateX(
     transform-origin: top;  
     animation: hoverY  infinite 5s;  
 }
-
 .contactMe span:nth-child(4){
     bottom: 0;
     right:0;
