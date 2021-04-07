@@ -674,6 +674,8 @@ cursor: pointer;
         border-radius: 5px;
         width: 500px;
         max-width: 98%;
+        margin-bottom: 2px;
+        
     }
     .html5 p,
     .css p,
